@@ -1,21 +1,56 @@
 .button {
     margin: 10px;
     padding: 10px;
+    border-color: #f2f2f2;
+    border-width: 0px;
+    font-family: arial,sans-serif;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    color: rgb(90, 90, 90);
+    border-radius: 5px;
+
 }
 
-#main {
+button:hover {
+    border-width: 1px;
+    border-color: grey;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.google {
+.google-image {
     text-align: center;
     padding-top: 100px;
 }
 
+input[type="text"] {
+    width: 550px;
+    border-radius: 20px;
+    height: 30px;
+    border-color: #f2f2f2;
+    font-family: arial,sans-serif;
+    font-size: small;
+}
+
+input[type="text"]:focus {
+    border-color: grey;
+    border: 50px;
+}
+
 .center {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.button-wrapper {
     text-align: center;
     padding: 10px;
     margin: auto;
@@ -27,15 +62,34 @@
     bottom: 0;
     width: 100%;
     background-color: #f2f2f2;
+    font-family: arial,sans-serif;
+    font-size: small;
 }
 
-.footer-left {
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.left {
     padding: 10px;
     float: left;
 }
 
-.footer-right {
+.right {
     padding: 10px;
     float: right;
 }
 
+a {
+    margin: 10px;
+}
